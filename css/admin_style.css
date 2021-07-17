@@ -1,6 +1,6 @@
 
 img.OCWMA_rating_div {
-    width: 105px;
+    width: 100px;
     vertical-align: middle;
 }
 .ocwma_cover_div {
@@ -23,8 +23,12 @@ line-height: 51px;
 .ocwma_data_table tr th{
 min-width: 250px;
 }
-.ocwma_data_table select,.ocwma_data_table input[type="number"]{
-width: 30%;
+.ocwma_cover_div h2 {
+    background-color: #2271b1;
+    padding: 10px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 .ocwma_data_table strong {
 vertical-align: middle;

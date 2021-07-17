@@ -1,28 +1,12 @@
-<h1>Multiple Shipping Address Woocommerce</h1>
+# Multiple Shipping Address Woocommerce
+Welcome to the [Multiple Shipping Address Woocommerce](https://wordpress.org/plugins/multiple-shipping-address-woocommerce/) repository on GitHub. Here you can browse the source, look at open issues and keep track of development.
 
-**[Multiple Shipping Address Woocommerce](https://wordpress.org/plugins/multiple-shipping-address-woocommerce/)** using for customer can be using multiple billing address and shipping address.
+If you are not a developer, please use the [Multiple Shipping Address Woocommerce support forum](https://wordpress.org/support/plugin/multiple-shipping-address-woocommerce/) on WordPress.org.
 
-**[Save Shipping Address Woocommerce](https://wordpress.org/plugins/multiple-shipping-address-woocommerce/)** using to edit and delete which shipping address you saved into Woocommerce.
+## Support
+This repository is not suitable for support. Please don't use our issue tracker for support requests, but for core plugin issues only. Support can take place in the appropriate channels:
 
-It is store data **[woocommerce multiple customer addresses](https://wordpress.org/plugins/multiple-shipping-address-woocommerce/)** so customer when checkout they can select anyone good address from multiple address. **[Woocommerce save multiple shipping address](https://wordpress.org/plugins/multiple-shipping-address-woocommerce/)** to make it effective if more than one address have to customer for example Office Address and Home Address. Its also **[save shipping address woocommerce](https://wordpress.org/plugins/multiple-shipping-address-woocommerce/)** with make data to shipping address.
+* The [Multiple Shipping Address Woocommerce support forum](https://wordpress.org/support/plugin/multiple-shipping-address-woocommerce/) on WordPress.org.
+* [Premium support](https://www.xeeshop.com/support-us/) for customers who have purchased themes or plugins.
 
-<h4>How it works Woocommerce Save Multiple Shipping Address</h4>
-
-
-> **Plugin Features**
->
-> * Maximum Address limit
-> * Billing and Shipping both for add multiple address
-> * Customize button text, font size, font color, background color
-> * Edit and Delete Address customer dashboard panel
-> * You can be add Checkout Page on New address
-> * Easy Integration
-> * Mobile Friendly
-
-
-&#128312; **[Get Pro](https://www.xeeshop.com/product/multiple-shipping-address-woocommerce-pro/)**
-
-> * Max Address Option enable/disable
-> * change button text
-> * change font size
-
+Support requests in issues on this repository will be closed on sight.

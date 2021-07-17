@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Multiple Shipping Address Woocommerce
+ * Plugin Name: Multiple Shipping Address Woocommerce Pro
  * Description: This plugin allows create to users multiple address.
  * Version: 1.0
  * Author: Ocean Infotech
@@ -23,7 +23,7 @@ if (!defined('OCWMA_PLUGIN_DIR')) {
   define('OCWMA_PLUGIN_DIR',plugins_url('', __FILE__));
 }
 if (!defined('OCWMA_DOMAIN')) {
-  define('OCWMA_DOMAIN', 'ocwcp');
+  define('OCWMA_DOMAIN', 'multiple-shipping-address-woocommerce');
 }
 if (!defined('OCWMA_BASE_NAME')) {
 define('OCWMA_BASE_NAME', plugin_basename(OCWMA_PLUGIN_FILE));
@@ -52,9 +52,13 @@ if (!class_exists('OCWMA')) {
       wp_enqueue_style( 'OCWMA_admin_css', OCWMA_PLUGIN_DIR . '/css/admin_style.css', false, '1.0.0' );
       wp_enqueue_style( 'wp-color-picker' );
       wp_enqueue_script( 'wp-color-picker-alpha', OCWMA_PLUGIN_DIR . '/js/wp-color-picker-alpha.min.js', array( 'wp-color-picker' ), '1.0.0', true );
+      wp_enqueue_script( 'OCWMA_admin_js',OCWMA_PLUGIN_DIR . '/js/admin.js', array( 'jquery', 'select2') );
+      wp_localize_script( 'ajaxloadpost', 'ajax_postajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+      wp_enqueue_style( 'woocommerce_admin_styles-css', WP_PLUGIN_URL. '/woocommerce/assets/css/admin.css',false,'1.0',"all");
     }
 
     function OCWMA_load_script_style() {
+      wp_enqueue_script('jquery', false, array(), false, false);
       wp_enqueue_style( 'OCWMA_front_css',OCWMA_PLUGIN_DIR . '/css/style.css', false, '1.0.0' );
       wp_enqueue_script( 'OCWMA_front_js',OCWMA_PLUGIN_DIR . '/js/front.js', false, '1.0.0' );
       wp_localize_script( 'OCWMA_front_js', 'ajax_url', admin_url('admin-ajax.php') );
@@ -106,11 +110,13 @@ if (!class_exists('OCWMA')) {
 
     //Load all includes files
     function includes() {
+      //Add Option backend on product page
+      include_once('includes/oc-ocwma-comman.php');
       //Admn site Layout
       include_once('includes/oc-ocwma-backend.php');
       //Custom Functions
       include_once('includes/oc-ocwma-front.php');
-      //Add Option backend on product page
+
 
     }
 
