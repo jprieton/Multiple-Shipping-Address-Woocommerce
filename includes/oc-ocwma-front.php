@@ -42,7 +42,7 @@ if (!class_exists('OCWMA_front')) {
               ?>
               <div id="address_selection_popup_main" class="address_selection_popup_main">
                 <div class="billing_popup_header">
-                  <h3><?php echo __('Choice Billing Address','multiple-shipping-address-woocommerce');?></h3>
+                  <h3><?php echo __('Choose Billing Address','multiple-shipping-address-woocommerce');?></h3>
                 </div>
                 <div class="address_selection_popup_inner">
                   <span class="ocwma_close_choice_section"><?php echo __('×','multiple-shipping-address-woocommerce');?></span>
@@ -68,7 +68,7 @@ if (!class_exists('OCWMA_front')) {
                               <li><?php echo $user_data['billing_state'].', '.$user_data['billing_country'];?></li>
                             </ul>
                             <div class="address_select_button">
-                              <a href="javascript:void(0)" class="choice_address" data-id="<?php echo $row->id; ?>"><?php echo __('Choice This Address','multiple-shipping-address-woocommerce');?></a>
+                              <a href="javascript:void(0)" class="choice_address" data-id="<?php echo $row->id; ?>"><?php echo __('Choose This Address','multiple-shipping-address-woocommerce');?></a>
                             </div>
                           </div>
                         </div>
@@ -86,7 +86,7 @@ if (!class_exists('OCWMA_front')) {
               ?>
               <div class="shipping_address_selection_popup_main">
                 <div class="shipping_popup_header">
-                  <h3><?php echo __('Choice Billing Address','multiple-shipping-address-woocommerce');?></h3>
+                  <h3><?php echo __('Choose Billing Address','multiple-shipping-address-woocommerce');?></h3>
                 </div>
                 <div class="shipping_address_selection_popup_inner">
                   <span class="shipping_ocwma_close_choice_section">×</span>
@@ -110,7 +110,7 @@ if (!class_exists('OCWMA_front')) {
                               <li><?php echo $user_data['shipping_state'].', '.$user_data['shipping_country'];?></li>
                             </ul>
                             <div class="shipping_address_select_button">
-                              <a href="javascript:void(0)" class="choice_shipping_address" data-id="<?php echo $row->id; ?>"><?php echo __('Choice This Address','multiple-shipping-address-woocommerce');?></a>
+                              <a href="javascript:void(0)" class="choice_shipping_address" data-id="<?php echo $row->id; ?>"><?php echo __('Choose This Address','multiple-shipping-address-woocommerce');?></a>
                             </div>
                           </div>
                         </div>
@@ -147,7 +147,7 @@ if (!class_exists('OCWMA_front')) {
                   }
                   ?>
                   <div class="billing_address">
-                    <button class="defalut_address <?php echo $checked;?>"  data-value="<?php echo $defalt_addd;?>" data-add_id="<?php echo $row->id;?>"  data-type="billing"><?php echo __('DefalutAddress','multiple-shipping-address-woocommerce');?></button><button class="form_option_edit" data-id="<?php echo $user_id;?>"  data-eid-bil="<?php echo $row->id;?>"><?php echo __('edit','multiple-shipping-address-woocommerce');?></button>
+                    <button class="defalut_address <?php echo $checked;?>"  data-value="<?php echo $defalt_addd;?>" data-add_id="<?php echo $row->id;?>"  data-type="billing"><?php echo __('Default Address','multiple-shipping-address-woocommerce');?></button><button class="form_option_edit" data-id="<?php echo $user_id;?>"  data-eid-bil="<?php echo $row->id;?>"><?php echo __('edit','multiple-shipping-address-woocommerce');?></button>
                     <span class="delete_bill_address"><a href="?action=delete_ocma&did=<?php echo $row->id;?>"><?php echo __('Delete','multiple-shipping-address-woocommerce');?></a></span><br>
                     <span class="billing_address_inner">
                       <?php echo $user_data['reference_field']."<br>".
@@ -180,7 +180,7 @@ if (!class_exists('OCWMA_front')) {
                   $user_data = unserialize($userdata_ship);  
                   ?>
                   <div class="shipping_address">
-                    <button class="defalt_addd_shipping <?php echo $checked;?>"  data-value="<?php echo $defalt_addd;?>" data-add_id="<?php echo $row->id;?>"  data-type="shipping"><?php echo __('DefalutAddress','multiple-shipping-address-woocommerce');?></button><button class="form_option_ship_edit" data-id="<?php echo $user_id;?>"  data-eid-ship="<?php echo $row->id;?>"><?php echo __('edit','multiple-shipping-address-woocommerce');?></button>
+                    <button class="defalt_addd_shipping <?php echo $checked;?>"  data-value="<?php echo $defalt_addd;?>" data-add_id="<?php echo $row->id;?>"  data-type="shipping"><?php echo __('Default Address','multiple-shipping-address-woocommerce');?></button><button class="form_option_ship_edit" data-id="<?php echo $user_id;?>"  data-eid-ship="<?php echo $row->id;?>"><?php echo __('edit','multiple-shipping-address-woocommerce');?></button>
                     <span class="delete_ship_address"><a href="?action=delete-ship&did-ship=<?php echo $row->id;?>"><?php echo __('Delete','multiple-shipping-address-woocommerce');?></a></span><br>
                     <span class="shipping_address_inner">
                       <?php echo $user_data['reference_field']."<br>".
@@ -493,12 +493,12 @@ if (!class_exists('OCWMA_front')) {
             }elseif ($ocwma_comman['ocwma_select_address_type'] == 'Popup') {
               if($ocwma_comman['ocwma_select_popup_btn_style'] == 'button'){
                 ?>
-                <a href="javascript:void(0)" class="choice_bil_address"><?php echo __('Choice Billing Address','multiple-shipping-address-woocommerce');?></a>
+                <a href="javascript:void(0)" class="choice_bil_address"><?php echo __('Choose Billing Address','multiple-shipping-address-woocommerce');?></a>
                 <?php
               }
               if($ocwma_comman['ocwma_select_popup_btn_style'] == 'link'){
                 ?>
-                <a href="javascript:void(0)" id="choice_bil_address" class="choice_bil_address"><?php echo __('Choice Billing Address','multiple-shipping-address-woocommerce');?></a>
+                <a href="javascript:void(0)" id="choice_bil_address" class="choice_bil_address"><?php echo __('Choose Billing Address','multiple-shipping-address-woocommerce');?></a>
                 <?php
               }
             }
@@ -536,12 +536,12 @@ if (!class_exists('OCWMA_front')) {
             }elseif ($ocwma_comman['ocwma_select_shipping_address_type'] == 'Popup') {
               if($ocwma_comman['ocwma_shipping_select_popup_btn_style'] == 'button'){
                 ?>
-                <a href="javascript:void(0)" class="choice_sheep_address"><?php echo __('Choice shipping Address','multiple-shipping-address-woocommerce');?></a>
+                <a href="javascript:void(0)" class="choice_sheep_address"><?php echo __('Choose shipping Address','multiple-shipping-address-woocommerce');?></a>
                 <?php
               }
               if($ocwma_comman['ocwma_shipping_select_popup_btn_style'] == 'link'){
                 ?>
-                <a href="javascript:void(0)" id="choice_sheep_address" class="choice_sheep_address"><?php echo __('Choice shipping Address','multiple-shipping-address-woocommerce');?></a>
+                <a href="javascript:void(0)" id="choice_sheep_address" class="choice_sheep_address"><?php echo __('Choose shipping Address','multiple-shipping-address-woocommerce');?></a>
                 <?php
               }
             }
